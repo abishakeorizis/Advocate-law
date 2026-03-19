@@ -1,0 +1,46 @@
+/* Responsive fixes */
+
+/* Ensure the hero title wraps cleanly on small screens */
+.hero-title {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+/* Keep the nav logo text readable on narrow viewports */
+.nav-logo-text {
+  white-space: normal;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* Improve line-breaking for long names in the hero title */
+.hero-title span {
+  display: inline-block;
+  white-space: normal;
+}
+
+/* Ensure section anchors don’t get hidden behind the fixed header */
+section {
+  scroll-margin-top: 90px;
+}
+
+/* Keep native wheel scrolling behavior (continuous, non-snapping) */
+html {
+  scroll-behavior: auto;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .nav-logo-text {
+    font-size: 0.9rem;
+  }
+
+  .nav-logo-text span {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 5vw, 2.6rem);
+  }
+}

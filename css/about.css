@@ -1,0 +1,33 @@
+.advocate-name {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    padding-left: 120px; /* KEY FIX */
+}
+.about-experience-badge {
+    position: absolute;
+    left: 0;
+    bottom: -25px; /* move below image */
+    z-index: 1;
+}
+@media (max-width: 768px) {
+
+    .about-experience-badge {
+        left: 10px;
+        bottom: -30px;
+        transform: scale(0.9);
+    }
+
+    .advocate-name {
+        padding-left: 110px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
+@media (max-width: 480px) {
+
+    .advocate-name {
+        padding-left: 100px;
+        font-size: 16px;
+    }
+}

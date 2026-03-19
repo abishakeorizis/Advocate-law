@@ -1,0 +1,76 @@
+/* Navbar — fixed at top so it is always visible */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.5rem;
+}
+
+#navbar .container {
+  width: 100%;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+#navbar .nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: #2c2c47;
+  font-weight: 700;
+}
+
+#navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#navbar .nav-links a {
+  text-decoration: none;
+  color: #2c2c47;
+  font-weight: 600;
+  padding: 0.35rem 0.25rem;
+  transition: color 0.2s ease;
+}
+
+#navbar .nav-links a:hover,
+#navbar .nav-links a.active {
+  color: #981b58;
+}
+
+#navbar .btn-nav-cta {
+  padding: 0.55rem 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #6e1f60, #b22f76);
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.14);
+}
+
+/* Ensure page content isn’t hidden under the fixed navbar */
+body {
+  padding-top: 90px; /* adjust if navbar height changes */
+}
+
+/* Optional: smaller navbar when scrolled */
+#navbar.scrolled {
+  padding: 0.5rem 1.2rem;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}

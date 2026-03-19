@@ -1,27 +1,15 @@
-/* ========================================
-   ADVOCATE PORTFOLIO — MASTER STYLESHEET
-   All styles are organized into separate files by feature/section.
-   ======================================== */
+@import './base.css';
+@import './components.css';
+@import './animations.css';
 
-/* Base — Variables, Reset, Typography, Section Headers */
-@import './css/base.css';
+@import './navbar.css';
+@import './hero.css';
+@import './about.css';
+@import './practice.css';
+@import './statistics.css';
+@import './testimonials.css';
+@import './blog.css';
+@import './contact.css';
+@import './footer.css';
 
-/* Shared Components — Buttons, Reveal, Preloader, Back-to-Top, Overlay */
-@import './css/components.css';
-
-/* Keyframe Animations */
-@import './css/animations.css';
-
-/* Section Styles */
-@import './css/navbar.css';
-@import './css/hero.css';
-@import './css/about.css';
-@import './css/practice.css';
-@import './css/statistics.css';
-@import './css/testimonials.css';
-@import './css/blog.css';
-@import './css/contact.css';
-@import './css/footer.css';
-
-/* Responsive — All Media Queries */
-@import './css/responsive.css';
+@import './responsive.css';
